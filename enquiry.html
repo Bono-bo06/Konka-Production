@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote | Konka Productions</title>
+    <meta name="description" content="Submit a rental enquiry for sound, lighting, and stage equipment hire. Tell us about your event, and we'll send you a tailored quote.">
+    
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Konka Productions logo" width="150" height="50">
+        </div>
+        <nav>
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About</a> &nbsp;|&nbsp;
+            <a href="services.html">Services</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Request a Quote</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="enquiry-intro">
+            <h1>Request a Quote</h1>
+            <p>Fill in the form below with your event details. We'll get back to you within 24 hours with a customised quotation for your equipment hire needs.</p>
+        </section>
+
+        <!-- Building a detailed form with proper labels and a reset button -->
+        <section class="quote-form-section">
+            <form class="quote-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+27 15 555 0123">
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Equipment Category Required:</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="sound">Sound Systems & Audio</option>
+                        <option value="lighting">Lighting & Visuals</option>
+                        <option value="stage">Stages & Trussing</option>
+                        <option value="dj">DJ Equipment</option>
+                        <option value="power">Generators & Power</option>
+                        <option value="full-package">Full Production Package</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-type">Type of Event:</label>
+                    <input type="text" id="event-type" name="event-type" required placeholder="e.g., Wedding, Concert, Corporate Gala">
+                </div>
+
+                <div class="form-group">
+                    <label for="event-date">Event Date:</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="venue">Venue / Location:</label>
+                    <input type="text" id="venue" name="venue" placeholder="Where is the event taking place?">
+                </div>
+
+                <div class="form-group">
+                    <label for="requirements">Equipment Requirements / Message:</label>
+                    <textarea id="requirements" name="requirements" rows="5" required placeholder="Tell us exactly what you need, estimated crowd size, and any special requests..."></textarea>
+                </div>
+
+                <!-- Adding both the submit and reset buttons -->
+                <div class="form-actions">
+                    <button type="submit">Submit Enquiry</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Konka Productions (Pty) Ltd. All rights reserved.</p>
+        <p>Email: info@konkaproductions.co.za | Phone: +27 15 555 0123</p>
+        <div>
+            <a href="https://www.facebook.com/EventsSA" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://www.instagram.com/eventssa" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="https://www.tiktok.com/@eventssa" target="_blank" rel="noopener noreferrer">TikTok</a> |
+            <a href="https://www.youtube.com/@eventssa" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+    </footer>
+</body>
+</html>
