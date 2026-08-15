@@ -47,3 +47,14 @@ text
 - Added fully labelled HTML enquiry and contact forms with Reset and Submit buttons.
 - Included external CSS `<link>` tag (pointing to an empty `style.css` for Part 2).
 - Added this README file with changelog, sitemap, and references.
+
+## References
+- Google Search Central, 2026. *SEO Starter Guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 14 August 2026).
+- Google, 2026. *Core Web Vitals*. Available at: https://developers.google.com/search/docs/appearance/core-web-vitals (Accessed: 14 August 2026).
+- Mozilla Developer Network (MDN), 2026. *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 14 August 2026).
+- Mozilla Developer Network (MDN), 2026. *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 14 August 2026).
+- Mozilla Developer Network (MDN), 2026. *Responsive Web Design*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design (Accessed: 14 August 2026).
+- World Wide Web Consortium (W3C), 2024. *Web Content Accessibility Guidelines (WCAG) 2.2*. Available at: https://www.w3.org/TR/WCAG22/ (Accessed: 14 August 2026).
+- GitHub, 2026. *About Git*. Available at: https://docs.github.com/en/get-started/using-git/about-git (Accessed: 14 August 2026).
+- South Africa, 2013. *Protection of Personal Information Act 4 of 2013*. Available at: https://www.gov.za/documents/protection-personal-information-act (Accessed: 14 August 2026).
+- South Africa, 2008. *Consumer Protection Act 68 of 2008*. Available at: https://www.gov.za/documents/consumer-protection-act (Accessed: 14 August 2026).
