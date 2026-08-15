@@ -33,3 +33,17 @@ Konka Productions (Pty) Ltd
 ├── services.html (Services & Equipment Hire)
 ├── enquiry.html (Request a Quote)
 └── contact.html (Contact Us)
+
+text
+
+## Changelog
+
+### [2026-08-15] - Part 1 Initial Setup
+- Created project folder structure (`css/`, `images/`, `js/`).
+- Created 5 required HTML files: `index.html`, `about.html`, `services.html`, `enquiry.html`, `contact.html`.
+- Implemented a single, horizontal navigation menu across all pages.
+- Added 6 placeholder image tags with descriptive `alt` attributes.
+- Embedded a Google Maps `<iframe>` on the Contact page.
+- Added fully labelled HTML enquiry and contact forms with Reset and Submit buttons.
+- Included external CSS `<link>` tag (pointing to an empty `style.css` for Part 2).
+- Added this README file with changelog, sitemap, and references.
