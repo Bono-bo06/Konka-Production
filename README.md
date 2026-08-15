@@ -25,3 +25,11 @@ This project is a 5-page static HTML website for Konka Productions (Pty) Ltd, a 
 - **Week 5-6:** Final testing, internal linking checks, documentation, and submission.
 
 
+## Sitemap
+Konka Productions (Pty) Ltd
+│
+├── index.html (Home)
+├── about.html (About Us)
+├── services.html (Services & Equipment Hire)
+├── enquiry.html (Request a Quote)
+└── contact.html (Contact Us)
