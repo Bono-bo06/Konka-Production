@@ -3,54 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipment Hire & Services | Konka Productions</title>
-    <meta name="description" content="Browse Konka Productions' equipment catalogue. We hire sound systems, lighting rigs, DJ gear, stages, and more for events.">
-   
+    <title>Equipment Hire and Services | Konka Productions</title>
+    <meta name="description" content="Browse Konka Productions equipment catalogue. We hire sound systems, lighting rigs, DJ gear, stages, and more for events.">
+    <!-- Linking the CSS again so the services page matches the rest -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="logo-area">
-            <img src="images/logo.png" alt="Konka Productions logo" width="150" height="50">
+            <!-- Logo takes you home -->
+            <a href="index.html">
+                <img src="Images/logo.png" alt="Konka Productions logo" width="150" height="50">
+            </a>
         </div>
         <nav>
-            <a href="index.html">Home</a> &nbsp;|&nbsp;
-            <a href="about.html">About</a> &nbsp;|&nbsp;
-            <a href="services.html">Services</a> &nbsp;|&nbsp;
-            <a href="enquiry.html">Request a Quote</a> &nbsp;|&nbsp;
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Request a Quote</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
+        <!-- A quick intro to what this page is about -->
         <section class="page-intro">
-            <h1>Our Equipment & Services</h1>
-            <p>We stock a comprehensive range of professional event production gear. Whether you're planning a small party or a massive corporate gala, we have the tools to bring your vision to life.</p>
+            <h1>Our Equipment and Services</h1>
+            <p>We stock a comprehensive range of professional event production gear. Whether you are planning a small party or a massive corporate gala, we have the tools to bring your vision to life.</p>
         </section>
 
-        <!-- I'm showcasing 3 of our top equipment items here. Each gets a dedicated photo -->
+        <!-- Here are the three main equipment categories. Each gets an image and a quote button -->
         <section class="services-grid">
+            <h2>Featured Equipment</h2>
+
             <article class="service-card">
-                <!-- This is image 2 of 6 total -->
-                <img src="images/sound-system.jpg" alt="Professional speaker array and mixing desk setup for a large concert" width="600" height="400">
-                <h3>Sound Systems & Audio</h3>
+                <img src="Images/sound-system.jpg" alt="Professional speaker array and mixing desk setup for a large concert" width="600" height="400">
+                <h3>Sound Systems and Audio</h3>
                 <p>We provide powerful PA systems, subwoofers, stage monitors, and professional microphones. Our sound engineers ensure crystal-clear audio for speeches, live bands, and DJ performances.</p>
-                <a href="enquiry.html">Request a Quote</a>
+                <a href="enquiry.html" class="cta-link">Request a Quote</a>
             </article>
 
             <article class="service-card">
-                <!-- This is image 3 of 6 total -->
-                <img src="images/lighting-rig.jpg" alt="RGB LED lighting rig and moving head lights shining on a dance floor" width="600" height="400">
-                <h3>Lighting & Visuals</h3>
+                <img src="Images/lighting-rig.jpg" alt="RGB LED lighting rig and moving head lights shining on a dance floor" width="600" height="400">
+                <h3>Lighting and Visuals</h3>
                 <p>Transform any venue with our state-of-the-art lighting. We offer LED screens, moving head lights, wash lighting, and laser effects to create the perfect mood for your event.</p>
-                <a href="enquiry.html">Request a Quote</a>
+                <a href="enquiry.html" class="cta-link">Request a Quote</a>
             </article>
 
             <article class="service-card">
-                <!-- This is image 4 of 6 total -->
-                <img src="images/dj-gear.jpg" alt="DJ turntables, mixer, and laptop setup ready for a nightclub event" width="600" height="400">
-                <h3>DJ Equipment & Stages</h3>
+                <img src="Images/dj-gear.jpg" alt="DJ turntables, mixer, and laptop setup ready for a nightclub event" width="600" height="400">
+                <h3>DJ Equipment and Stages</h3>
                 <p>High-quality DJ controllers, turntables, and durable stage platforms. We also supply trussing, crowd barriers, and generators to make sure your event runs without a hitch.</p>
-                <a href="enquiry.html">Request a Quote</a>
+                <a href="enquiry.html" class="cta-link">Request a Quote</a>
             </article>
         </section>
     </main>
