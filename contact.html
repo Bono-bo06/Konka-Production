@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Konka Productions</title>
     <meta name="description" content="Reach out to Konka Productions for your next event. Visit our offices in Plot 50 Rissik or Mashau Thondoni 743 for a consultation.">
-    <!-- Same CSS link -->
+    <meta name="keywords" content="contact Konka Productions, event production company Limpopo, equipment hire contact, Plot 50 Rissik, Mashau Thondoni">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
     <header class="site-header">
         <div class="logo-area">
-            <!-- Click logo to go home -->
             <a href="index.html">
-                <img src="Images/logo.png" alt="Konka Productions logo" width="150" height="50">
+                <img src="images/logo.png" srcset="images/logo.png 150w" sizes="150px" alt="Konka Productions logo" width="150" height="50">
             </a>
         </div>
-        <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,8 +33,7 @@
     </header>
 
     <main>
-        <!-- Contact info block -->
-        <section class="contact-details">
+        <section class="contact-details animate-on-scroll">
             <h1>Get in Touch</h1>
             <p>Whether you need emergency gear for a last-minute event or want to plan a massive production months in advance, our team is ready to help.</p>
 
@@ -43,27 +47,65 @@
             </div>
         </section>
 
-        <!-- Map and a small image of our crew -->
-        <section class="map-section">
+        <!-- Interactive Leaflet map -->
+        <section class="map-section animate-on-scroll">
             <h2>Find Our Head Office</h2>
-            <div class="map-container">
-                <!-- One of our crew images, used to meet the 6 image requirement -->
-                <img src="Images/event-office.jpg" alt="Konka Productions event crew loading equipment into a truck for a corporate event" width="600" height="200">
-                <!-- Google Map iframe showing the area -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3!2d29.7!3d-23.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec7b2a9d4e3f2a1%3A0x5c4b3a2f1e0d9c8b!2sLimpopo%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1690000000000!5m2!1sen!2sza" allowfullscreen="" loading="lazy" width="600" height="450"></iframe>
-            </div>
+            <div id="interactive-map" class="interactive-map"></div>
+            <button type="button" id="directions-btn" class="map-btn">Get Directions to Head Office</button>
+            <!-- Static image for reference -->
+            <img src="images/event-office.jpg" 
+                 srcset="images/event-office.jpg 600w" 
+                 sizes="(max-width: 768px) 100vw, 600px" 
+                 alt="Konka Productions event crew loading equipment into a truck for a corporate event" 
+                 width="600" height="200">
+        </section>
+
+        <!-- General message form. This is the contact form required by the rubric -->
+        <section class="contact-form-section animate-on-scroll">
+            <h2>Send a General Message</h2>
+            <p>Use this form for general enquiries, feedback, or anything else. We reply within 2 working days.</p>
+            <form class="contact-form" id="contact-form" action="#" method="post" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">Your Full Name:</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email Address:</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-type">Type of Message:</label>
+                    <select id="contact-type" name="contact-type">
+                        <option>General Enquiry</option>
+                        <option>Support Request</option>
+                        <option>Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Your Message:</label>
+                    <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="submit-button">Send Message</button>
+                    <button type="reset" class="reset-button">Clear Form</button>
+                </div>
+                <div id="contact-response" class="form-response"></div>
+            </form>
         </section>
     </main>
 
     <footer class="site-footer">
         <p>&copy; 2026 Konka Productions (Pty) Ltd. All rights reserved.</p>
         <p>Email: info@konkaproductions.co.za | Phone: +27 15 555 0123</p>
-        <div>
+        <div class="social-links">
             <a href="https://www.facebook.com/EventsSA" target="_blank" rel="noopener noreferrer">Facebook</a> |
             <a href="https://www.instagram.com/eventssa" target="_blank" rel="noopener noreferrer">Instagram</a> |
             <a href="https://www.tiktok.com/@eventssa" target="_blank" rel="noopener noreferrer">TikTok</a> |
             <a href="https://www.youtube.com/@eventssa" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

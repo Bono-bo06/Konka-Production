@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipment Hire and Services | Konka Productions</title>
     <meta name="description" content="Browse Konka Productions equipment catalogue. We hire sound systems, lighting rigs, DJ gear, stages, and more for events.">
-    <!-- Linking the CSS again so the services page matches the rest -->
+    <meta name="keywords" content="sound system hire, lighting rig rental, DJ equipment hire, stage hire Limpopo, event production equipment South Africa">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="logo-area">
-            <!-- Logo takes you home -->
             <a href="index.html">
-                <img src="Images/logo.png" alt="Konka Productions logo" width="150" height="50">
+                <img src="images/logo.png" srcset="images/logo.png 150w" sizes="150px" alt="Konka Productions logo" width="150" height="50">
             </a>
         </div>
-        <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,32 +32,59 @@
     </header>
 
     <main>
-        <!-- A quick intro to what this page is about -->
-        <section class="page-intro">
+        <section class="page-intro animate-on-scroll">
             <h1>Our Equipment and Services</h1>
             <p>We stock a comprehensive range of professional event production gear. Whether you are planning a small party or a massive corporate gala, we have the tools to bring your vision to life.</p>
         </section>
 
-        <!-- Here are the three main equipment categories. Each gets an image and a quote button -->
-        <section class="services-grid">
+        <!-- Dynamic featured service. JavaScript updates this -->
+        <section class="featured-service animate-on-scroll">
+            <div id="featured-service">
+                <h3>Loading featured equipment...</h3>
+            </div>
+        </section>
+
+        <!-- Search bar. JavaScript filters the cards below -->
+        <section class="search-section animate-on-scroll">
+            <label for="service-search">Search our equipment:</label>
+            <input type="text" id="service-search" placeholder="Type to filter, e.g. sound, lighting, DJ...">
+            <p id="no-results" style="display:none;">No equipment matched your search. Try a different word.</p>
+        </section>
+
+        <section class="services-grid animate-on-scroll">
             <h2>Featured Equipment</h2>
 
             <article class="service-card">
-                <img src="Images/sound-system.jpg" alt="Professional speaker array and mixing desk setup for a large concert" width="600" height="400">
+                <img class="gallery-img" 
+                     src="images/sound-system.jpg" 
+                     srcset="images/sound-system.jpg 600w" 
+                     sizes="(max-width: 768px) 100vw, 600px" 
+                     alt="Professional speaker array and mixing desk setup for a large concert" 
+                     width="600" height="400">
                 <h3>Sound Systems and Audio</h3>
                 <p>We provide powerful PA systems, subwoofers, stage monitors, and professional microphones. Our sound engineers ensure crystal-clear audio for speeches, live bands, and DJ performances.</p>
                 <a href="enquiry.html" class="cta-link">Request a Quote</a>
             </article>
 
             <article class="service-card">
-                <img src="Images/lighting-rig.jpg" alt="RGB LED lighting rig and moving head lights shining on a dance floor" width="600" height="400">
+                <img class="gallery-img" 
+                     src="images/lighting-rig.jpg" 
+                     srcset="images/lighting-rig.jpg 600w" 
+                     sizes="(max-width: 768px) 100vw, 600px" 
+                     alt="RGB LED lighting rig and moving head lights shining on a dance floor" 
+                     width="600" height="400">
                 <h3>Lighting and Visuals</h3>
                 <p>Transform any venue with our state-of-the-art lighting. We offer LED screens, moving head lights, wash lighting, and laser effects to create the perfect mood for your event.</p>
                 <a href="enquiry.html" class="cta-link">Request a Quote</a>
             </article>
 
             <article class="service-card">
-                <img src="Images/dj-gear.jpg" alt="DJ turntables, mixer, and laptop setup ready for a nightclub event" width="600" height="400">
+                <img class="gallery-img" 
+                     src="images/dj-gear.jpg" 
+                     srcset="images/dj-gear.jpg 600w" 
+                     sizes="(max-width: 768px) 100vw, 600px" 
+                     alt="DJ turntables, mixer, and laptop setup ready for a nightclub event" 
+                     width="600" height="400">
                 <h3>DJ Equipment and Stages</h3>
                 <p>High-quality DJ controllers, turntables, and durable stage platforms. We also supply trussing, crowd barriers, and generators to make sure your event runs without a hitch.</p>
                 <a href="enquiry.html" class="cta-link">Request a Quote</a>
@@ -64,12 +95,14 @@
     <footer class="site-footer">
         <p>&copy; 2026 Konka Productions (Pty) Ltd. All rights reserved.</p>
         <p>Email: info@konkaproductions.co.za | Phone: +27 15 555 0123</p>
-        <div>
+        <div class="social-links">
             <a href="https://www.facebook.com/EventsSA" target="_blank" rel="noopener noreferrer">Facebook</a> |
             <a href="https://www.instagram.com/eventssa" target="_blank" rel="noopener noreferrer">Instagram</a> |
             <a href="https://www.tiktok.com/@eventssa" target="_blank" rel="noopener noreferrer">TikTok</a> |
             <a href="https://www.youtube.com/@eventssa" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

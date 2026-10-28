@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konka Productions | Event Equipment and Production Hire</title>
     <meta name="description" content="Konka Productions provides professional sound, lighting, and stage equipment hire for events across South Africa. Request a quote today.">
-    <!-- Linking the CSS file here so the page looks good -->
+    <meta name="keywords" content="event equipment hire South Africa, sound system rental Limpopo, stage hire, lighting rigs, DJ equipment hire, event production company">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
-    <!-- The header holds the logo and the menu. I'll link the logo to the homepage -->
+    <!-- Header with hamburger menu button -->
     <header class="site-header">
         <div class="logo-area">
-            <!-- Clicking the logo takes you home. I'll wrap it in an anchor tag -->
             <a href="index.html">
-                <img src="Images/logo.png" alt="Konka Productions logo" width="150" height="50">
+                <img src="images/logo.png" srcset="images/logo.png 150w" sizes="150px" alt="Konka Productions logo" width="150" height="50">
             </a>
         </div>
-        <!-- This is the main navigation. I'm using a list so it's easy to style later -->
-        <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,20 +34,22 @@
     </header>
 
     <main>
-        <!-- This is the big hero section. It's the first thing people see -->
-        <section class="hero-section">
-            <img src="Images/hero-event.jpg" alt="Large stage setup with lighting and professional sound equipment at a live concert" width="1200" height="500">
+        <section class="hero-section animate-on-scroll">
+            <img src="images/hero-event.jpg" 
+                 srcset="images/hero-event.jpg 1200w" 
+                 sizes="(max-width: 768px) 100vw, 1200px" 
+                 alt="Large stage setup with lighting and professional sound equipment at a live concert" 
+                 width="1200" height="500">
             <h1>Elevate Your Event with Konka Productions</h1>
+            <p id="greeting">Welcome to Konka Productions.</p>
             <p>We offer professional sound systems, stage hire, lighting rigs, and DJ equipment across Limpopo and beyond. Let us power your next production.</p>
-            <!-- Buttons that link to the quote form and services page -->
             <div class="cta-buttons">
-                <a href="enquiry.html">Request a Quote</a>
-                <a href="services.html">View Equipment</a>
+                <a href="enquiry.html" class="cta-button">Request a Quote</a>
+                <a href="services.html" class="cta-button">View Equipment</a>
             </div>
         </section>
 
-        <!-- Quick overview of the main equipment we provide -->
-        <section class="services-overview">
+        <section class="services-overview animate-on-scroll">
             <h2>What We Supply</h2>
             <div class="service-grid">
                 <div class="service-item">
@@ -62,17 +68,17 @@
         </section>
     </main>
 
-    <!-- Footer with copyright info and social links -->
     <footer class="site-footer">
         <p>&copy; 2026 Konka Productions (Pty) Ltd. All rights reserved.</p>
         <p>Email: info@konkaproductions.co.za | Phone: +27 15 555 0123</p>
-        <div>
-            <!-- Social links open in a new tab -->
+        <div class="social-links">
             <a href="https://www.facebook.com/EventsSA" target="_blank" rel="noopener noreferrer">Facebook</a> |
             <a href="https://www.instagram.com/eventssa" target="_blank" rel="noopener noreferrer">Instagram</a> |
             <a href="https://www.tiktok.com/@eventssa" target="_blank" rel="noopener noreferrer">TikTok</a> |
             <a href="https://www.youtube.com/@eventssa" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

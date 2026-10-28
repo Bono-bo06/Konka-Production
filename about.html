@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Konka Productions</title>
     <meta name="description" content="Learn about Konka Productions, our mission to provide reliable equipment hire, and our commitment to making every event a success.">
-    <!-- Same stylesheet link so everything looks consistent -->
+    <meta name="keywords" content="Konka Productions about, event equipment company Limpopo, production hire South Africa, sound lighting stage company">
+    <!-- Link to the external CSS file -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- This is the ONLY header and navigation menu on the page -->
     <header class="site-header">
         <div class="logo-area">
-            <!-- Logo links back to the homepage -->
+            <!-- Clicking the logo takes the user back to the homepage -->
             <a href="index.html">
-                <img src="Images/logo.png" alt="Konka Productions logo" width="150" height="50">
+                <img src="images/logo.png" srcset="images/logo.png 150w" sizes="150px" alt="Konka Productions logo" width="150" height="50">
             </a>
         </div>
-        <nav>
+        
+        <!-- Hamburger button for mobile screens -->
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- The main navigation links -->
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,23 +39,28 @@
     </header>
 
     <main>
-        <!-- Start with a short intro about the company -->
-        <section class="company-intro">
+        <!-- Introduction section -->
+        <section class="company-intro animate-on-scroll">
             <h1>About Konka Productions</h1>
             <p>Konka Productions (Pty) Ltd is an event production and equipment hire company based in Limpopo. We provide professional production equipment and technical services for events, entertainment productions, corporate functions, and special occasions.</p>
-            <!-- One of our warehouse images to show what we have in stock -->
-            <img src="Images/warehouse-stock.jpg" alt="Warehouse full of professional sound and lighting equipment packed and ready for hire" width="600" height="400">
+            
+            <!-- Warehouse image with responsive attributes -->
+            <img src="images/warehouse-stock.jpg" 
+                 srcset="images/warehouse-stock.jpg 600w" 
+                 sizes="(max-width: 768px) 100vw, 600px" 
+                 alt="Warehouse full of professional sound and lighting equipment packed and ready for hire" 
+                 width="600" height="400">
         </section>
 
-        <!-- Mission and vision are important, so I'll put them here -->
-        <section class="mission-vision">
+        <!-- Mission and Vision section -->
+        <section class="mission-vision animate-on-scroll">
             <h2>Our Mission and Vision</h2>
             <p><strong>Mission:</strong> To provide reliable, professional, and affordable production equipment and services that help customers deliver successful events and productions.</p>
             <p><strong>Vision:</strong> To become a trusted production and equipment hire company in South Africa, recognised for quality equipment, professional service, and dependable event support.</p>
         </section>
 
-        <!-- Let people know who we usually work with -->
-        <section class="target-audience">
+        <!-- Target audience section -->
+        <section class="target-audience animate-on-scroll">
             <h2>Who We Serve</h2>
             <p>We cater to a wide variety of clients including:</p>
             <ul>
@@ -57,15 +73,19 @@
         </section>
     </main>
 
+    <!-- This is the footer. It does NOT contain a nav element or a logo -->
     <footer class="site-footer">
         <p>&copy; 2026 Konka Productions (Pty) Ltd. All rights reserved.</p>
         <p>Email: info@konkaproductions.co.za | Phone: +27 15 555 0123</p>
-        <div>
+        <div class="social-links">
             <a href="https://www.facebook.com/EventsSA" target="_blank" rel="noopener noreferrer">Facebook</a> |
             <a href="https://www.instagram.com/eventssa" target="_blank" rel="noopener noreferrer">Instagram</a> |
             <a href="https://www.tiktok.com/@eventssa" target="_blank" rel="noopener noreferrer">TikTok</a> |
             <a href="https://www.youtube.com/@eventssa" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
     </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="js/script.js"></script>
 </body>
 </html>
